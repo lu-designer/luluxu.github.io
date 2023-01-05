@@ -1,0 +1,405 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+.landingPageText {
+  color: #8f8f8f;
+}
+
+p {
+  color: black;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  /* font-size: 3.5rem; */
+  font-size: 100px;
+  line-height: 1.5;
+}
+
+.small-heading{
+  font-size: 24px;
+  color: #fff;
+
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+/* Containers */
+
+.container-fluid{
+  padding: 6% 15%;
+}
+
+.container-fluid-bannerImg{
+  padding: 8% 25% 0 25%;
+}
+
+
+/* Sections */
+
+.colored-section {
+  background-color: black;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+
+
+
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color:  black;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+
+/* about me */
+
+#titleProject .container-fluid {
+  padding: 3% 15% 0;
+}
+
+#titleAboutMe {
+  color: Black;
+  text-align: left;
+}
+
+#titleAboutMe .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.title-image-aboutMe {
+  width: 100%;
+  position:static;
+  margin-left:  40px;
+
+  /* right: 30%; */
+}
+
+.project-img-aboutMe{
+width: 40%;
+margin: 20 20 20 0px;
+/* padding-bottom: 40px; */
+}
+
+
+
+
+/* Title Image */
+
+.title-image {
+  width: 80%;
+  transform: rotate(0deg);
+  /* position: relative; */
+  margin-left:  80px;
+
+  /* right: 30%; */
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.project-img{
+width: 100%;
+margin: 20 20 20 0px;
+padding-bottom: 40px;
+}
+
+/* .icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+} */
+
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color:  #999;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  margin: 20px;
+}
+
+
+/* #press {
+  background-color:  #999;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+} */
+
+/* Pricing Section */
+
+/* #pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+} */
+
+/* CTA Section */
+
+
+/* Footer Section */
+#footer{
+
+  text-align: center;
+  padding: 2% 15%;
+
+}
+
+
+.copyright-text{
+
+  color: #FFFFFF;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+/* Project ONE */
+
+/* Project title */
+.projectOneTitle{
+
+  text-align: left;
+  padding: 40px 0px;
+}
+
+
+/* 4-col description */
+
+.description-box {
+  padding: 4.5% ;
+}
+
+
+.workshopDescription-box {
+  padding-right:  4.5% ;
+}
+
+
+h5 {
+  padding-top: 40px;
+
+padding-bottom: 30px;
+
+}
+
+h3 {
+
+padding-bottom: 40px;
+padding-top: 40px;
+}
+
+/* hr.dashed {
+  border-top: 3px dashed #bbb;
+} */
+
+.whiteHR{
+  border-top: 0.1px solid #bbb;
+}
+
+.darkHR{
+  border-top: 0.1px solid #fff;
+}
+
+.subtitle{
+  text-align: left;
+  font-size: 0.775em;
+color: #bbb;
+padding-top: 40px;
+
+}
+
+
+/* SERVICE DESIGN Section */
+
+.serviceDesign-img{
+  width: 100%;
+padding-top: 30px;
+
+padding-bottom: 30px;
+}
+
+.container-fluid-imgs{
+  padding: 0 5%;
+}
+
+
+/* UX design Section */
+.h5Heading{
+
+  padding: 3% 0;
+}
+
+.UXDesign-img{
+  width: 100%;
+padding-top: 20px;
+
+padding-bottom: 20px;
+
+}
+
+.imageAnnotation{
+  text-align: right;
+  padding-bottom: 50px;
+}
+
+
+/* project 2 */
+
+.description-box-project2 {
+  padding: 0 4.5% 0 4.5%;
+}
+
+
+.container-fluid-project2{
+  padding: 0 15% 5% 15%;
+}
+
+
+
+/* project 4 */
+
+
+.p4-video{
+
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  /* padding: 30px; */
+}
+
+
+.p4-lantern-img{
+  width: 100%;
+margin: 40px 40px 40px 0;
+}
+
+/*
+#projectTwoAnimation {
+width: 550px;
+height: 400px;
+}
+
+#projectThreeAnimation {
+width: 550px;
+height: 400px;
+}
+
+#projectFiveAnimation {
+width: 550px;
+height: 400px;
+}
+
+#projectFourAnimation {
+width: 550px;
+height: 400px;
+}
+
+#projectOneAnimation {
+width: 550px;
+height: 400px;
+} */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
