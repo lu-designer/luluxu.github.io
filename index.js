@@ -24,7 +24,7 @@ var images = [
 
 function setImg(projectId,img) {
   const {over,out} = images[projectId - 1]
-  document.getElementById('projectAnimation' + projectId).src = images[projectId - 1][img];
+  document.getElementById('project' + projectId).src = images[projectId - 1][img];
 }
 
 function preloadImages(){
