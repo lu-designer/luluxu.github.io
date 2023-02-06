@@ -237,7 +237,7 @@ padding-bottom: 40px;
 
   color: #FFFFFF;
   text-align: right;
-  
+
 }
 
 .social-icon {
@@ -404,4 +404,7 @@ height: 400px;
     position: static;
     transform: rotate(0);
   }
+
+
+
 }
