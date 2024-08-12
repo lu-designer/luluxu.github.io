@@ -5,20 +5,20 @@ var images = [
     out: 'images/MQ-N.png'
   },
   {
-    over: 'images/big-w1.png',
-    out: 'images/bigW-index-mousehover.png'
+    over: 'images/big-w1.jpg',
+    out: 'images/bigW-index-mousehover.jpg'
   },
   {
-    over: 'images/usability testing -img.png',
+    over: 'images/usability testing -img.jpg',
     out: "images/nsw electoral new.png"
   },
   {
     over: 'images/p4-overhead pic-1.gif',
-    out: "images/kongming lantern-index.png"
+    out: "images/kongming lantern-index.jpg"
   },
   {
     over: 'images/SJET-index-mouseHover1_1.gif',
-    out: 'images/belonging-indexImg.png'
+    out: 'images/belonging-indexImg.jpg'
   }
 ]
 
