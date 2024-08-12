@@ -508,6 +508,8 @@ height: 400px;
     transform: rotate(0);
   }
 
-
+ .clientListImg{
+    width: 100%;
+ } 
 
 }
