@@ -371,8 +371,15 @@ padding-top: 40px;
   font-size: 0.775em;
 color: #bbb;
 padding-top: 40px;
-
 }
+
+.subtitleFeatured{
+  text-align: left;
+  font-size: 0.775em;
+color: #bbb;
+padding-top: 150px;
+}
+
 
 
 /* SERVICE DESIGN Section */
