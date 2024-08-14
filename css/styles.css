@@ -5,7 +5,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Montserrat-Bold";
 }
 
 .logo-image {
@@ -115,6 +115,15 @@ p {
 }
 
 
+.container-fluid-imgs{
+  padding: 0 5%;
+}
+
+
+.container-fluid-featuredproject{
+  padding: 10% 5%;
+}
+
 /* Sections */
 
 .colored-section {
@@ -156,6 +165,9 @@ p {
 width: 20%;
 
 }
+
+
+
 
 
 /* Buttons */
@@ -362,6 +374,9 @@ padding-top: 40px;
   border-top: 0.1px solid #bbb;
 }
 
+
+
+
 .darkHR{
   border-top: 0.1px solid #fff;
 }
@@ -371,6 +386,7 @@ padding-top: 40px;
   font-size: 0.775em;
 color: #bbb;
 padding-top: 40px;
+
 }
 
 .subtitleFeatured{
@@ -378,8 +394,9 @@ padding-top: 40px;
   font-size: 0.775em;
 color: #bbb;
 padding-top: 150px;
-}
 
+
+}
 
 
 /* SERVICE DESIGN Section */
@@ -391,9 +408,6 @@ padding-top: 30px;
 padding-bottom: 30px;
 }
 
-.container-fluid-imgs{
-  padding: 0 5%;
-}
 
 
 /* UX design Section */
@@ -515,13 +529,15 @@ height: 400px;
     transform: rotate(0);
   }
 
- .clientListImg{
+  .clientListImg{
+
     width: 100%;
+
  } 
 
-.project-img-aboutMe{
+ .project-img-aboutMe{
+
   width: 20%;
  }
-  
 
 }
