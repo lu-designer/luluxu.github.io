@@ -1,25 +1,40 @@
 
 var images = [
   {
-    over: 'images/SJET-index-mouseHover1_6.gif',
-    out: 'images/MQ-N.png'
+    over: 'images/SJET-index-mouseHover1_1.gif',
+    out: 'images/belonging-indexImg.jpg'
   },
+
+  {
+    over: 'images/macquarieUniversity.jpg',
+    out: 'images/ServiceDesignLandingpage.jpg'
+  },
+
+
   {
     over: 'images/big-w1.jpg',
     out: 'images/bigW-index-mousehover.jpg'
   },
+
+  {
+    over: 'images/SJET-index-mouseHover1_6.gif',
+    out: 'images/MQ-N.png'
+  },
+
+
+
   {
     over: 'images/usability testing -img.jpg',
     out: "images/nsw electoral new.png"
   },
+
+  
   {
-    over: 'images/p4-overhead pic-1.gif',
-    out: "images/kongming lantern-index.jpg"
+    over: 'images/GettingStartedLandingpageHoverover.jpg',
+    out: "images/AcceptEnrolLandingpage.jpg"
   },
-  {
-    over: 'images/SJET-index-mouseHover1_1.gif',
-    out: 'images/belonging-indexImg.jpg'
-  }
+
+  
 ]
 
 function setImg(projectId,img) {
