@@ -93,7 +93,7 @@ p {
 /* Containers */
 
 .container-fluid{
-  padding: 6% 15%;
+  padding: 4% 15%;
 }
 
 .container-fluid-nav{
@@ -106,7 +106,7 @@ p {
 
 
 .container-fluid-bannerImg{
-  padding: 8% 25% 0 25%;
+  padding: 5% 25% 0 25%;
 }
 
 
@@ -121,7 +121,7 @@ p {
 
 
 .container-fluid-featuredproject{
-  padding: 10% 5%;
+  padding: 5% 5%;
 }
 
 /* Sections */
@@ -169,12 +169,12 @@ width: 20%;
 
 
 
-
 /* Buttons */
 
 .download-button {
   margin: 5% 3% 5% 0;
   border-radius: 50px; 
+  
 }
 
 /* Title Section */
@@ -247,14 +247,41 @@ margin: 20 20 20 0px;
 }
 
 .feature-box {
-  padding: 4.5%;
+  padding: 3%;
 }
 
 .project-img{
 width: 100%;
-margin: 20 20 20 0px;
-padding-bottom: 40px;
+margin:  40px 20px 20px 0;
+
+border-radius: 15px;
 }
+
+.project-img-feature-box{
+  width: 100%;
+  margin:  0 20px 20px 0;
+  
+  border-radius: 15px;
+
+}
+
+.project-img-landingPage{
+  width: 100%;
+  margin: 20px 20px 20px 0;
+  
+  border-radius: 15px;
+  }
+
+  .project-img-vertical{
+    width: 100%;
+  
+    margin: 20 20 20 0px;
+    border-radius: 15px;
+  
+    }
+  
+
+
 
 /* .icon {
   color: #ef8172;
@@ -345,7 +372,7 @@ padding-bottom: 40px;
 /* 4-col description */
 
 .description-box {
-  padding: 4.5% ;
+  padding: 3% ;
 }
 
 
@@ -363,8 +390,8 @@ padding-bottom: 30px;
 
 h3 {
 
-padding-bottom: 40px;
-padding-top: 40px;
+padding-bottom: 20px;
+padding-top: 20px;
 }
 
 /* hr.dashed {
@@ -386,7 +413,6 @@ padding-top: 40px;
   text-align: left;
   font-size: 0.775em;
 color: #bbb;
-padding-top: 40px;
 
 }
 
@@ -394,7 +420,7 @@ padding-top: 40px;
   text-align: left;
   font-size: 0.775em;
 color: #bbb;
-padding-top: 150px;
+padding-top: 100px;
 
 
 }
@@ -427,7 +453,8 @@ padding-bottom: 20px;
 
 .imageAnnotation{
   text-align: right;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+
 }
 
 
@@ -506,13 +533,8 @@ height: 400px;
   font-size:  x-large;
 }
 
-.project-img-vertical{
-  width: 100%;
 
-  margin: 10 10 0 0px;
-  padding-bottom: 10px;
-  }
-
+  
 
 
   
