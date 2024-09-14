@@ -36,8 +36,8 @@ var images = [
 
   
   {
-    over: 'images/3-leopard--smaller-size.gif',
-    out: "images/TheDoorImg2.jpg"
+    over: 'images/TheDoorImg2.jpg',
+    out: "images/3-leopard--smaller-size.gif"
   },
 
   {
