@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Macquarie University UX Redesign | Lu Xu</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    h3 {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+    .project-img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: 0.3s ease;
+      border-radius: 6px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content-wrapper {
+      position: relative;
+      margin: 5% auto;
+      max-width: 90%;
+      overflow: hidden;
+    }
+    .modal-content {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .zoom-controls {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1001;
+    }
+    .zoom-controls button {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.25rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+   </style>
+
+</head>
+<body class="page">
+    <nav class="navbar">
+    <div class="logo"><a href="index.html"  style="text-decoration:none"  >Lulu Xu</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html" > Home</a></li>
+      <li><a href="Service.html"> Services</a></li>
+      <li><a href="Portfolio.html"> Portfolio</a></li>
+      <li><a href="About me.html" >About</a></li>
+      <li><a href="Contact me.html" class="btn">Let’s talk</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+    <section class="section">
+      <h1>Macquarie University Student Experience Projects</h1>
+      <h3>Improving onboarding and enrolment through UX & service design</h3>
+      <img class="project-img" src="images/MQ-N.png" alt="Macquarie Hero" />
+
+      <div class="portfolio-grid">
+        <div><h4>Services</h4><p>UX/UI Design, Service Design</p></div>
+        <div><h4>Platform</h4><p>Web, Internal Systems</p></div>
+        <div><h4>Role</h4><p>Lead Experience Designer</p></div>
+        <div><h4>Duration</h4><p>Sep 2022 – Jan 2023</p></div>
+      </div>
+
+      <h3>Project Overview</h3>
+      <p>This case study combines two service and UX design projects completed for Macquarie University: the “Getting Started Toolkit” and the redesign of the university’s online enrolment experience. Both projects aimed to improve key student touchpoints, reduce confusion, and foster a smoother university onboarding journey.</p>
+
+      <h3>Challenge</h3>
+      <p>Students found both the onboarding and enrolment experiences confusing and inconsistent. The existing information was fragmented across webpages and emails, and the enrolment system was visually outdated and cognitively demanding, especially for international or first-year students.</p>
+
+            <img class="project-img" src="images/MQ-building2.jpg" alt="Enrolment Redesign">
+
+      <h3>Discovery & Research</h3>
+      <p>Through interviews, usability testing, and staff co-design workshops, we uncovered pain points such as unclear terminology, lack of step-by-step guidance, and misalignment between EDM content and web interfaces.</p>
+      <img class="project-img" src="images/workshop.jpg" alt="Workshop">
+      <p class="imageAnnotation subtitle">↑ Co-design workshop with university staff</p>
+
+      <h3>1. Toolkit Design: Getting Started</h3>
+      <p>We created a digital checklist aligned with the university's email campaigns to ensure consistency and reduce mental load. The toolkit offered a clean, visual guide for new students to complete tasks in a logical order, integrated with links and explanations.</p>
+
+      <div class="portfolio-grid getting-started-row">
+        <img class="project-img" src="images/Getting started 1.jpg" alt="Checklist UI 1">
+        <img class="project-img" src="images/Getting started 2.jpg" alt="Checklist UI 2">
+        <img class="project-img" src="images/Getting started 3.jpg" alt="Checklist UI 3">
+      </div>
+     
+      <div class="portfolio-grid getting-started-row">
+      <img class="project-img" src="images/P1-GS-FinalPrototype1.jpg" alt="Final Prototype 1">
+      <img class="project-img" src="images/P1-GS-FinalPrototype2.jpg" alt="Final Prototype 2">
+      <img class="project-img" src="images/P1-GS-FinalPrototype3.jpg" alt="Final Prototype 3">
+      </div>
+     
+      <h3>2. UX Redesign: Enrolment Webpage</h3>
+      <p>We redesigned the enrolment page to simplify language, introduce a step-by-step visual journey, and reduce the intimidation factor. Icons and diagrams were used to support user understanding of terminology like “unit selection” and “credit points.”</p>
+
+       <img class="project-img" src="images/user flower.jpg" alt="Enrolment Redesign">
+      <p class="imageAnnotation subtitle">↑ Enrolment Page User Flow</p>
+
+      <h3>2.1 Usability Testing</h3>
+      <p>We conducted six usability testing sessions with current Macquarie students to evaluate our prototypes and gather feedback. These sessions helped us identify confusing elements in the webpage’s information architecture and layout, uncover cognitive barriers in how users processed the content hierarchy, and collect direct recommendations for improvement.
+</p>
+<div class="portfolio-grid">
+      <img class="project-img" src="images/testing1.jpg" alt="Final Prototype 1">
+
+      <img class="project-img" src="images/testing2.jpg" alt="Final Prototype 2">
+    </div>
+
+    <div class="portfolio-grid getting-started-row">
+      <img class="project-img" src="images/GS_3.jpg" alt="Final Prototype 1">
+      <img class="project-img" src="images/GS_4.jpg" alt="Final Prototype 2">
+      <img class="project-img" src="images/GS_5.jpg" alt="Final Prototype 3">
+      </div>
+      
+      <h3>Outcomes</h3>
+      <ul>
+        <li>Checklist toolkit adopted across multiple departments</li>
+        <li>Reduction in student support queries during enrolment</li>
+        <li>Increased confidence among new international students</li>
+      </ul>
+
+      <h3>Reflection</h3>
+      <p>This project reinforced my belief that great design isn’t just about aesthetics — it’s about clarity, confidence, and compassion. By aligning communication channels and simplifying journeys, we made a stressful transition smoother for thousands of students.</p>
+
+   
+    </section>
+  </main>
+
+<footer class="footer">
+    <div class="footer-social" style="margin-top: 1rem;">
+      <a href="https://www.youtube.com/@littlelubigadventure" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <i class="fab fa-youtube" style="font-size: 1.4rem; color: #B35656; margin-right: 1rem;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/luxu-designer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin" style="font-size: 1.4rem; color: #B35656;"></i>
+      </a>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 Lulu Xu | All rights reserved</p>
+  </footer>
+
+  <div id="imgModal" class="modal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <div class="modal-content-wrapper">
+    <img class="modal-content" id="modalImg" alt="Zoomed Image" />
+    <div class="zoom-controls">
+      <button onclick="zoomIn()">+</button>
+      <button onclick="zoomOut()">−</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  let scale = 1;
+
+  document.querySelectorAll('.project-img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'block';
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      scale = 1;
+      modalImg.style.transform = `scale(${scale})`;
+    });
+  });
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  function zoomIn() {
+    scale += 0.2;
+    modalImg.style.transform = `scale(${scale})`;
+  }
+
+  function zoomOut() {
+    scale = Math.max(0.5, scale - 0.2);
+    modalImg.style.transform = `scale(${scale})`;
+  }
+
+  // Close modal on background click
+  modal.addEventListener('click', e => {
+    if (e.target === modal) closeModal();
+  });
+</script>
+
+
+</body>
+</html>
