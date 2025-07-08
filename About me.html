@@ -1,504 +1,96 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Lu Xu</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
-
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Font Awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-  <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact | Lu Xu</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body class="page">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Lulu Xu</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Service.html">Services</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="About me.html" class="active">About</a></li>
+      <li><a href="#contact" class="btn">Let’s talk</a></li>
+    </ul>
+  </nav>
 
-<body>
+  <main class="page-main">
 
-  <section class="colored-section" id="titleProject">
+<section id="about" class="section">
+  <div class="container">
 
-    <div class="container-fluid-nav">
+    <!-- Side-by-side layout: image + intro -->
+    <div class="about-top-row">
+      <div class="about-img">
+        <img src="images/profile pic 3.jpg" alt="Lu Xu profile picture">
+      </div>
+      <div class="about-intro">
+        <h2>About Me</h2>
+        <p>Hi, I’m Lulu—a multidisciplinary designer, filmmaker, and storyteller. I began my career working in service design & UX, where I collaborated on end-to-end human-centered projects involving research, service journey mapping, UX/UI design, and usability testing. Across every project, my mission has remained the same: to tackle real human problems with empathy and intention.</p>
+        <p>In the last few years, I followed a calling that led me around the world—with my camera and curiosity—documenting people’s lives and stories. That’s how I discovered a deep passion for video storytelling. Through travel and filmmaking, I found a new creative path that still centers on what I’ve always cared most about: the human experience.</p>
+      </div>
+    </div>
 
-      <!-- Nav Bar -->
+    <!-- Full-width below the image/intro -->
+    <div class="about-below">
+      <div class="mission-statement">
+        <blockquote>“I help social-good organizations tell human stories and design meaningful services—through a blend of authentic storytelling and people-centered design.”</blockquote>
+      </div>
 
-    
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <h3 class="core-values-heading">Core Values</h3>
+      <ul class="core-values">
+        <li><i class="fas fa-heart"></i> Empathy-Driven</li>
+        <li><i class="fas fa-lightbulb"></i> Creative + Strategic</li>
+        <li><i class="fas fa-globe-asia"></i> Culturally Sensitive</li>
+        <li><i class="fas fa-users"></i> Community-Centered</li>
+      </ul>
+    </div>
 
-        <a class="navbar-brand" href="index.html">    
-          <!--   <img class="logo-image" src="images/luluxu-design-logo.gif" alt="iphone-mockup"> -->
-<h2>Lulu</h2>
-          </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Projects.html">Product Design</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Interactive Art.html">XR</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About me.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a href = "mailto:luxu.designer@gmail.com" target="_blank">  <button class="download-button btn btn-sm brn-light" type="button"> <b> Get in Touch</button> </b></a>  </center>
-          </li>
-          </ul>
-
-
-        </div>
-      </nav>
-
-</div>
+  </div>
 </section>
 
 
-      <!-- Title -->
-
-      <section class="white-section" id="titleAboutMe">
-        <div class="container-fluid">
-
- <!--
-      <p class="subtitle">
-     ABOUT ME
-    </p>
-
-      <hr class="whiteHR">
--->
-
-      <div class="row">
-
-        <div class="col-lg-4">
-          <img class="title-image-aboutMe" src="images/Profile pic2.jpg" alt="iphone-mockup">
-        </div>
-
-        <div class="col-lg-8">
-
-
-          <h2 class="projectOneTitle"><b>            “Do small things with great love.”
-          </b>
-
-     </h2>
-
-          <p>
-Hi! I'm Lulu, a product designer (UX UI) & service designer passionate about turning good ideas into even better products and experiences that are loved by users while helping businesses thrive.
-          </p>
-          <p>
-            I thrive on problem-solving, transforming user needs into wireframes, high-fidelity designs, and tested products. I guide projects from user research to implementation, crafting digital solutions that solve complex business challenges with a user-centered approach. Collaborating with users, stakeholders, and teams, I integrate feedback throughout the design process.
-
-          </p>
-        
-
-       <p>Beyond design, I enjoy exploring art through hand-painting techniques and immersive technologies like AR and VR. Outside of design & art, you can find me hiking through nature trails, exploring new travel destinations, and getting lost in the charm of a new place.</p>
-
-      </div>
-
-</div>
-
-<p class="subtitleFeatured">
-</p>
-
-
-      <h2 ><b>Services</b>
-
-         </h2>
-
-
-
-<div class="row">
-  <div class="feature-box-AboutMePage col-lg-4">
-
-    <img class="project-img-aboutMe" src="images/quantatitive user research copy.png" alt=""> 
-
-    <h5 >  Product Strategy  </h5>
-    <p class="landingPageText">  Discovery  </p>
-
-    <p class= "landingPageText"> Co-design Workshop 
-     </p>
-  
-
-
-  </div>
-
-  <div class="feature-box-AboutMePage col-lg-4">
-
-    <img class="project-img-aboutMe" src="images/qualitative research.png" alt=""> 
-
-    <h5 >  User & Market Research  </h5>
-    <p class="landingPageText">  Qualitative Research </p>
-
-    <p class= "landingPageText"> Competitor Analysis 
-     </p>
-      
-
-
-  </div>
-
-
-  <div class="feature-box-AboutMePage col-lg-4">
-
-   <img class="project-img-aboutMe" src="images/Workshop facilitation.png" alt=""> 
    
 
-    <h5 >  Service Design  </h5>
- 
-     <p class="landingPageText"> User Journey Mapping </p>
-
-
-      <p class="landingPageText"> Workshop Facilitation </p>
-
-
-
-  </div>
-
-
-
-  <div class="feature-box-AboutMePage col-lg-4">
-  <img class="project-img-aboutMe" src="images/UX UI icon.png" alt=""> 
-
-    <h5 > UX Design </h5>
-    <p class="landingPageText">  Ideation</p>
-      <p class="landingPageText"> Wireframing  </p>
-      <p class="landingPageText"> Prototyping  </p>
-      <p class="landingPageText"> Usability Testing  </p>
-
-    </div>
- 
-
-
-    <div class="feature-box-AboutMePage col-lg-4">
-     <img class="project-img-aboutMe" src="images/Ideation & prototyping.png" alt="">
-
-      <h5 > UI design </h5>
-      <p class="landingPageText">  Website</p>
-        <p class="landingPageText"> Mobile App
-  </p>
-  <p class="landingPageText"> Other Digital Interfaces
-</p>
-      </div>
-
-      <div class="feature-box-AboutMePage col-lg-4">
-      <img class="project-img-aboutMe" src="images/service design.png" alt=""> 
-
-      <h5 >  Development  </h5>
-        <p class="landingPageText">  HTML</p>
-          <p class="landingPageText"> CSS 
-      </p>
-   
-      
-      <p class="landingPageText"> AR Development
-      </p>
-        </div>
-</div>
-
-
-
-<p class="subtitleFeatured">
-</p>
-
-
-        <h3 >
-<b>Why work with me  </b>
- </h3>
-
-
-<div class="row">
-  <div class="feature-box-AboutMePage col-lg-4">
-
-
-    <h5 > Personalised & Specialised Expertise  </h5>
-    <p class="landingPageText">  My work is focused and tailored, bringing specialised knowledge to your project that larger firms may lack. </p>
-
-  
-
-
-  </div>
-  <div class="feature-box-AboutMePage col-lg-4">
-
-
-    <h5 > Cost-Effective & Flexible Services  </h5>
-    <p class="landingPageText">  I offer high-quality work without the overhead costs of larger agencies, ensuring you get the best value for your investment.  </p>
-
-  
-
-
-  </div>
-
-  <div class="feature-box-AboutMePage col-lg-4">
-
-
-    <h5 > Direct Communication  </h5>
-    <p class="landingPageText">  You'll work directly with me, ensuring clear and effective communication throughout the project. </p>
-
-  
-
-
-  </div>
-
-
-
-</div>
-
-
-
-    </div>
-  </section>
-
-
-
-<!--
-  <section class="colored-section">
-
-
-    <div class="container-fluid">
-
-      <p class="subtitle">
-   OTHER PROJECTS   </p>
-
-      <hr class="darkHR">
-
-</div>
-
-<div class="container-fluid-imgs">
-
-
-      <div class="row">
-
-        <div class="feature-box col-lg-8">
-          <img class="project-img" src="images/doodle.png" alt="iphone-mockup">
-        </div>
-
-        <div class="feature-box col-lg-4">
-
-        </div>
-
-        <div class="feature-box col-lg-4">
-
-        </div>
-
-
-
-                <div class="feature-box col-lg-8">
-                  <iframe width="800" height="500" src="https://www.youtube.com/embed/p-3ttbKutCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                  <p class="colored-section imageAnnotation subtitle "> &#8593; Land of Mirabile Visu: built with Unity 3D & Rhino</p>
-
-
-                  <img class="project-img" src="images/A1 Poster 5.jpg"  alt="image" >
-                </div>
-
-
-
-                <div class="feature-box col-lg-8">
-                  <iframe src="https://player.vimeo.com/video/437742736" width="640" height="410" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                  <p class="colored-section imageAnnotation subtitle "> &#8593; Multiverse: built with Processing </p>
-
-
-                </div>
-
-
-
-</div>
-
-
-</div>
-</section>
--->
-
-  <!-- Testimonials -->
-
-  <!-- <section class="colored-section" id="testimonials">
-
-    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active container-fluid">
-          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
-          <em>Pebbles, New York</em>
-        </div>
-        <div class="carousel-item container-fluid">
-          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-          <em>Beverly, Illinois</em>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-
-  </section> -->
-
-
-  <!-- Press -->
-
-  <!-- <section class="colored-section" id="press">
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
-
-  </section> -->
-
-
-  <!-- Pricing -->
-<!--
-  <section class="white-section" id="pricing">
-
-    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
-
-    <div class="row">
-
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Chihuahua</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="price-text">Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Labrador</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="price-text">$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="pricing-column col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h3>Mastiff</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="price-text">$99 / mo</h2>
-            <p>Pirority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
-
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-
-  </section> -->
-
-
-  <!-- Call to Action -->
-
-  <!-- <section class="colored-section" id="cta">
-
-    <div class="container-fluid">
-
-      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
-      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
-      <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
-    </div>
-  </section> -->
-
-
-
-
+    <!-- Contact Section -->
+    <section id="contact" class="section text-center">
+      <h2>Get in Touch With Me</h2>
+      <p>If you'd like to collaborate or have a question, feel free to reach out.</p>
+      <form class="contact-form" action="https://formspree.io/f/xjkrzern" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <!-- Footer -->
-
-  <footer class="colored-section" id="cta">
-
-    <div class="container-fluid-footer">
-<center>
-      <h3 class="big-heading">Let's work together</h3>
-    <!--   <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>-->
-    <p class="small-heading">Reach out to discover how we can collaborate. </p>
-    
-    <a href = "mailto: luxu.designer@gmail.com" target="_blank">  <button class="download-button btn btn-lg brn-light" type="button"> <b> Get in Touch</button> </b> </a> </center>
- 
-
-    
-
-          <div class="row">
-
-      <div class="feature-box col-lg-4">
-    <h5> My Services</h5>
-    <p>  <a  class="colored-section" href="Projects.html">
-      Product Design </a></p>
-  <p>  <a  class="colored-section" href="Interactive Art.html">
-   XR</a></p>
+<footer class="footer">
+    <div class="footer-social" style="margin-top: 1rem;">
+      <a href="https://www.youtube.com/@littlelubigadventure" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <i class="fab fa-youtube" style="font-size: 1.4rem; color: #B35656; margin-right: 1rem;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/luxu-designer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin" style="font-size: 1.4rem; color: #B35656;"></i>
+      </a>
     </div>
-
-    <div class="feature-box col-lg-3">
-      <h5  > About Me</h5>
-  <p>
-    <a  class="colored-section" href="About me.html">About </a></p>
-  <p>   <a class="colored-section" href = "mailto: luxu.designer@gmail.com" target="_blank">Contact</a></p>
-
-    </div>
-
-
-            <div class="feature-box col-lg-5">
-              <h5 > Let's connect</h5>
-
-              <a href="https://www.linkedin.com/in/luxu-designer/"  target="_blank"> <i class="social-icon fab fa-linkedin"></i></a>
-              <!--    <a href= "https://www.instagram.com/design_luu/"  target="_blank">  <i class="social-icon fab fa-instagram"></i></a>
-      <a href= "https://github.com/lu-designer" target="_blank">   <i class="social-icon fab fa-github"></i></a>
-
--->
-
-        <a href = "mailto: luxu.designer@gmail.com" target="_blank"> <i class="social-icon fas fa-envelope"></i></a>
-
- <p class="colored-section">luxu.designer@gmail.com
-</p>
-
-
-    </div>
-
-    </div>
-
-
-
-    <hr class="whiteHR">
-
-
-    <p class="copyright-text"> Made with < > by Lu © 2023 </p>
-
-        </div>
-      </footer>
-
+    <p style="margin-top: 1rem;">&copy; 2025 Lulu Xu | All rights reserved</p>
+  </footer>
 </body>
-
 </html>
