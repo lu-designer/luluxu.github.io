@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact | Lu Xu</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="page">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Lulu Xu</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Service.html">Services</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="About me.html" class="active">About</a></li>
+      <li><a href="#contact" class="btn">Let’s talk</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+        <section id="portfolio" class="section">
+      <div class="container service-container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="service">
+          <h3> Story-Based Videos & Mini Documentaries</h3>
+          <p>I help social NGOs and public services communicate their mission through emotionally resonant storytelling—filming staff interviews, community voices, and real-world impact.</p>
+          <ul>
+            <li>Short documentaries & campaign videos</li>
+            <li>Interview editing & scripting</li>
+            <li>Social media-ready formats</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3> UX & Service Design Communication Tools</h3>
+          <p>I support organisations in mapping, understanding, and improving user experiences—and translating them into clear, creative communication tools.</p>
+          <ul>
+            <li>User journey maps & pain point analysis</li>
+            <li>Onboarding kits & staff training tools</li>
+            <li>Visual insight reports</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+     <section id="portfolio" class="section">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="service">Service Design</button>
+        <button class="filter-btn" data-filter="video">Video/Film</button>
+        <button class="filter-btn" data-filter="ux">UX UI</button>
+        <button class="filter-btn" data-filter="strategy"> Product/Service Strategy</button>
+        <button class="filter-btn" data-filter="research"> Research</button>
+
+
+      </div>
+      <div class="portfolio-grid">
+        <a href="project Service Design.html" style="text-decoration:none" class="portfolio-item service strategy research">
+          <img src="images/ServiceDesignLandingpage.jpg" alt="UX project">
+          <h4>Journey Mapping for University Services</h4>
+        </a>
+        <a href="project-video.html" style="text-decoration:none" class="portfolio-item video">
+          <img src="images/Tibet vlog 1-V4.jpg" alt="Video storytelling project">
+          <h4>Mini-Documentary: Enigmatic Tibet</h4>
+        </a>
+
+        <a href="Combined project - getting started and enroll.html" style="text-decoration:none" class="portfolio-item service ux research">
+          <img src="images/MQ-N.png" alt="UX project">
+          <h4> Design University Onboarding Experiences </h4>
+        </a>
+
+         <a href="project SJETBelonging- NEW.html" style="text-decoration:none" class="portfolio-item ux research">
+          <img src="images/belonging-indexImg.jpg" alt="UX project">
+          <h4>Product Design (UX/UI) for University</h4>
+        </a>
+
+          <a href="project BigW.html" style="text-decoration:none" class="portfolio-item strategy research">
+          <img src="images/bigW-index-mousehover.jpg" alt="UX project">
+          <h4>Product Strategy for Sustainability Project</h4>
+          </a>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section text-center">
+      <h2>Get in Touch With Me</h2>
+      <p>If you'd like to collaborate or have a question, feel free to reach out.</p>
+      <form class="contact-form" action="https://formspree.io/f/xjkrzern" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer class="footer">
+    <div class="footer-social" style="margin-top: 1rem;">
+      <a href="https://www.youtube.com/@littlelubigadventure" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <i class="fab fa-youtube" style="font-size: 1.4rem; color: #B35656; margin-right: 1rem;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/luxu-designer/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin" style="font-size: 1.4rem; color: #B35656;"></i>
+      </a>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 Lulu Xu | All rights reserved</p>
+  </footer>
+
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectItems = document.querySelectorAll(".portfolio-item");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filter = button.getAttribute("data-filter");
+
+        projectItems.forEach((item) => {
+          if (filter === "all") {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.toggle("hidden", !item.classList.contains(filter));
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
