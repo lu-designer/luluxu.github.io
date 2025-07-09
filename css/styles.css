@@ -53,6 +53,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
+  flex-wrap: wrap;
   background: #fff;
   position: sticky;
   top: 0;
@@ -533,18 +534,6 @@ ul {
   width: 100%;
 }
 
-/* Responsive stacking */
-@media (max-width: 768px) {
-  .about-top-row {
-    flex-direction: column;
-  }
-
-  .about-img, .about-intro {
-    max-width: 100%;
-  }
-}
-
-
 .footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -554,29 +543,85 @@ ul {
   border-top: 1px solid #eee;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-  .nav-links {
+  /* === Navbar layout === */
+  .navbar {
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .cta-buttons {
-    flex-direction: column;
+    align-items: center;
   }
 
-    .about-container {
-    flex-direction: column;
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .nav-links li {
+    display: inline;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* === Hero section === */
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero .subtext {
+    font-size: 1rem;
+    padding: 0 1rem;
     text-align: center;
   }
 
-   .about-top-row {
+  .cta-buttons {
     flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 
-  .about-img, .about-intro {
+  /* === Filter buttons === */
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .filter-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  /* === Portfolio grid === */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* === About section === */
+  .about-container,
+  .about-top-row,
+  .getting-started-row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-img,
+  .about-intro {
     max-width: 100%;
   }
 
@@ -587,11 +632,4 @@ ul {
   .about-img img {
     margin-bottom: 1rem;
   }
-
-
- .getting-started-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
 }
