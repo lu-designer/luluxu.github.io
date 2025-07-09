@@ -557,19 +557,32 @@ ul {
     gap: 0.8rem;
     justify-content: center;
     padding-top: 1rem;
+    
+    row-gap: 0.6rem;
+  column-gap: 1rem;
   }
 
   .nav-links li {
-    display: inline;
+    /* display: inline;*/
+    display: inline-block;
+
+
   }
 
   .nav-links a {
     font-size: 0.9rem;
   }
 
+  .nav-links .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+
   .logo {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
 
   /* === Hero section === */
@@ -594,7 +607,9 @@ ul {
 
   /* === Filter buttons === */
   .filter-buttons {
-    display: flex;
+    /*display: flex;*/
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
@@ -604,6 +619,8 @@ ul {
   .filter-btn {
     font-size: 0.75rem;
     padding: 0.4rem 0.6rem;
+      white-space: nowrap;
+
   }
 
   /* === Portfolio grid === */
