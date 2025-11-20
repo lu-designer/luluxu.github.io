@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin Jet Zorbas | Composer & Sound Designer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+
+
+  <!-- Navbar -->
+ <header class="navbar">
+<div class="logo"><a href="index.html">Lulu Xu</a></div> 
+  <nav>
+    <ul>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!-- OLD toggle button 
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <i class="fa-regular fa-moon"></i>-->
+
+  <button class="mode-toggle" id="mode-toggle" aria-label="Toggle light/dark mode">
+  <!-- Sun Icon (default for light mode) -->
+  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+  </svg>
+
+  <!-- Moon Icon (hidden by default) -->
+  <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+    <path d="M21 12.79A9 9 0 0 1 12.21 3a7 7 0 1 0 8.79 9.79z"/>
+  </svg>
+</button>
+
+    </ul>
+  </nav>
+</header>
+
+
+
+  <!-- Storytelling 
+
+<section class="storytelling">
+  <div class="scroll-container">
+    <div class="project-track">
+      <div class="project animate"><a href="project3.html"><img src="images/project3.jpg" alt="Project 3"></a></div>
+      <div class="project animate"><a href="project5.html"><img src="images/project5.jpg" alt="Project 5"></a></div>
+      <div class="project animate"><a href="project7.html"><img src="images/project7.jpg" alt="Project 7"></a></div>   
+      <div class="project animate"><a href="project6.html"><img src="images/project6.jpg" alt="Project 6"></a></div>
+      <div class="project animate"><a href="project4.html"><img src="images/project4.jpg" alt="Project 4"></a></div>
+      <div class="project animate"><a href="project8.html"><img src="images/project8.jpg" alt="Project 8"></a></div>
+      <div class="project animate"><a href="project9.html"><img src="images/project9.png" alt="Project 9"></a></div>
+      <div class="project animate"><a href="project10.html"><img src="images/project10.jpg" alt="Project 10"></a></div>
+      <div class="project animate"><a href="project1.html"><img src="images/project1.jpg" alt="Project 1"></a></div>
+      <div class="project animate"><a href="project2.html"><img src="images/project2.jpg" alt="Project 2"></a></div>
+
+    </div>
+  </div>
+</section>-->
+
+
+  <!-- Project Filter 
+
+<section class="reveal">
+<div class="container">
+
+<div class="filter-menu">
+  <span class="filter-item active" data-filter="all">View All</span>
+  <span class="filter-item" data-filter="branding">UX UI </span>
+  <span class="filter-item" data-filter="editorial">Editorial </span>
+  <span class="filter-item" data-filter="visual">Visual </span>
+  <span class="filter-item" data-filter="gamedev">Game Design </span>
+  <span class="filter-item" data-filter="infographic">Infographic </span>
+</div>
+<div class="project-grid-filter"> 
+  <div class="project-card" data-category="branding visual editorial gamedev infographic">     <img src="images/project1.jpg" alt="">
+  </div>
+  <div class="project-card" data-category="editorial">    <img src="images/project2.jpg" alt="">
+  </div>
+  <div class="project-card" data-category="visual">       <img src="images/project3.jpg" alt="">
+  </div>
+  <div class="project-card" data-category="editorial">    <img src="images/project4.jpg" alt="">
+  </div>
+  <div class="project-card" data-category="branding">     <img src="images/project5.jpg" alt="">
+  </div>
+</div>
+</div>
+</section>-->
+
+
+<!-- Project Filter -->
+<section class="work reveal">
+  <div class="container">
+
+    <!-- Filter Menu -->
+    <div class="filter-menu">
+      <span class="filter-item active" data-filter="all">View All</span>
+      <span class="filter-item" data-filter="ux">UX UI </span>
+      <span class="filter-item" data-filter="website">Website</span>
+            <span class="filter-item" data-filter="app">Mobile App</span>
+            <span class="filter-item" data-filter="research">Research & Strategy</span>
+            <span class="filter-item" data-filter="service">Service Design</span>
+                        <span class="filter-item" data-filter="video">Video/Film</span>
+            <span class="filter-item" data-filter="visual">Visual/Creative</span>
+            <span class="filter-item" data-filter="development">Development</span>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="project-grid-filter">
+
+      <!-- 🎥 Story-Based Videos -->
+      <div class="project-card video-project" data-category="website development ux research visual">
+        <a href="project-justinSite.html">
+          <video autoplay loop muted playsinline class="loop-video">
+            <source src="images/justinSite-fireflyNew.webm" type="video/webm" />
+            <source src="images/justinSite-fireflyNew.mp4" type="video/mp4" />
+          </video>
+
+          <h2 class="project-card-title">Justin Jet Zorbas</h2>
+                  <p class="project-card-subtitle">Website | Front-end Development</p>
+        </a>
+      </div>
+
+      
+      <div class="project-card" data-category="ux app research">
+        <a href="project-belonging.html">
+          <img src="images/belonging-horizontalScroll.jpg" alt="Macquarie University Belonging App">
+          
+              <h2 class="project-card-title">Macquarie University</h2>
+                      <p class="project-card-subtitle">Mobile App | UX UI</p>
+         
+        </a>
+      </div>
+
+        <!-- 🧭 UX & Service Design -->
+      <div class="project-card video-project" data-category="ux website research">
+        <a href="project-enrolling.html">
+          <video autoplay loop muted playsinline class="loop-video">
+            <source src="images/enrolling-demo-vid.webm" type="video/webm" />
+            <source src="images/enrolling-demo-vid.mp4" type="video/mp4" />
+          </video>
+            <h2 class="project-card-title">Macquarie University</h2>
+                      <p class="project-card-subtitle">Website | UX UI</p>
+        </a>
+      </div>
+
+      
+      <div class="project-card" data-category="research">
+        <a href="project-bigW.html">
+          <img src="images/bigW-thumbnail.jpg" alt="Big W Sustainability Design">
+          
+            <h2 class="project-card-title">Big W</h2>
+            <p class="project-card-subtitle">Product Strategy | Research</p>
+     
+        </a>
+      </div>
+
+
+
+      <div class="project-card" data-category="service research">
+        <a href="project-service-design.html">
+          <img src="images/macquarie-serviceDesign-thumbnail.jpg" alt="Macquarie Service Design">
+          
+            <h2 class="project-card-title">Macquarie University</h2>
+            <p class="project-card-subtitle">Service Design | Workshop Facilitation</p>
+        
+        </a>
+      </div>
+
+      <div class="project-card" data-category="video visual">
+        <a href="project-pratthanadee.html">
+          <img src="images/pratthanadee-thumbnail.jpg" alt="Pratthanadee Foundation">
+                      <h2 class="project-card-title">Pratthanadee Foundation</h2>
+                      <p class="project-card-subtitle">Documentary | Short Film</p>
+        </a>
+      </div>
+
+    
+
+
+
+      <!-- 🎨 Visual / Creative 
+      <div class="project-card" data-category="visual">
+        <a href="project-illustration.html">
+          <img src="images/illustration-thumbnail.jpg" alt="Illustration and Narrative Art">
+          <div class="video-overlay-text">
+            <h2>Illustration & Narrative</h2>
+            <div class="tags">
+              <span class="tag-text">Visual Storytelling</span>
+              <span class="tag-text">Art Direction</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>-->
+  
+</section>
+
+
+
+  
+
+
+  <!-- CTA -->
+  <section class="cta reveal" id="contact">
+    <h2>Got a project in mind?</h2>
+    <p class="cta-description">Get in touch to see how we can collaborate on your project</p>
+    <a href="contact.html" class="btn secondary2">Contact Me</a>
+  </section>
+
+
+    <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+    </nav>
+
+      <hr class="footer-divider">
+
+
+         <div class="social-icons">
+           <a href="https://www.linkedin.com/in/luxu-designer/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.behance.net/luxudesign" target="_blank" aria-label="Behance">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+     
+        <a href="https://www.instagram.com/luluxu.create/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+  <p>© 2025 Lulu Xu. All rights reserved. </p>
+    
+  </footer>
+
+<!-- Custom Cursor -->
+<div class="custom-cursor"></div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".service-titles button");
+  const texts = document.querySelectorAll(".service-text");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Remove active from all
+      buttons.forEach(b => b.classList.remove("active"));
+      texts.forEach(t => t.classList.remove("active"));
+
+      // Add active to clicked
+      button.classList.add("active");
+      const target = button.getAttribute("data-target");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+
+
+
+const toggleButton = document.getElementById('mode-toggle');
+const sunIcon = document.getElementById('sun-icon');
+const moonIcon = document.getElementById('moon-icon');
+const body = document.body;
+
+// check saved mode
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+  sunIcon.style.display = 'none';
+  moonIcon.style.display = 'block';
+}
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  
+  const isDark = body.classList.contains('dark-mode');
+  if (isDark) {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

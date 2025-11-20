@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Justin Jet Zorbas</title>
+  <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+ <header class="navbar">
+<div class="logo"><a href="index.html">Lulu Xu</a></div> 
+  <nav>
+    <ul>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+             <!-- OLD toggle button 
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <i class="fa-regular fa-moon"></i>-->
+
+  <button class="mode-toggle" id="mode-toggle" aria-label="Toggle light/dark mode">
+  <!-- Sun Icon (default for light mode) -->
+  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+  </svg>
+
+  <!-- Moon Icon (hidden by default) -->
+  <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+    <path d="M21 12.79A9 9 0 0 1 12.21 3a7 7 0 1 0 8.79 9.79z"/>
+  </svg>
+</button>
+
+    </ul>
+  </nav>
+</header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="contact-container">
+      <h1>GET IN TOUCH</h1>
+      <p>For collaborations or just to say hello, feel free to reach out below.</p>
+
+      <div class="contact-box">
+        <form action="https://formspree.io/f/xjkrzern" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn secondary2">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+    </nav>
+
+      <hr class="footer-divider">
+
+
+         <div class="social-icons">
+           <a href="https://www.linkedin.com/in/luxu-designer/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.behance.net/luxudesign" target="_blank" aria-label="Behance">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+     
+         <a href="https://www.instagram.com/luluxu.create/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+  <p>© 2025 Lulu Xu. All rights reserved. </p>
+    
+  </footer>
+
+
+
+
+  <!-- Custom Cursor -->
+<div class="custom-cursor"></div>
+
+
+ <script>
+
+
+const toggleButton = document.getElementById('mode-toggle');
+const sunIcon = document.getElementById('sun-icon');
+const moonIcon = document.getElementById('moon-icon');
+const body = document.body;
+
+// check saved mode
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+  sunIcon.style.display = 'none';
+  moonIcon.style.display = 'block';
+}
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  
+  const isDark = body.classList.contains('dark-mode');
+  if (isDark) {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+    localStorage.setItem('theme', 'light');
+  }
+});
+  </script>
+
+
+
+</body>
+
+
+</html>
