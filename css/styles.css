@@ -2555,7 +2555,9 @@ display:none;
 .double-diamond{
   width:100%;
   height: auto;
-  padding-bottom: 10px;
+  padding: 1rem 1rem 1rem 0;
+
+  
 }
 
 .brand-scroll{
