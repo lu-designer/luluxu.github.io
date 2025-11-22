@@ -192,19 +192,10 @@ body.dark-mode .mode-toggle {
   width: 22px;              /* optional: slightly smaller for perfect visual balance */
   height: 22px;
    transform: translateY(1.1px); /* or -1px depending on which direction it’s off */
-
-  
 }
 
 
 
-
-
-
-/* Smooth transitions across all elements */
-* {
-  transition: background-color 0.3s, color 0.3s;
-}
 
 
 /* GENERAL */
@@ -212,7 +203,9 @@ body.dark-mode .mode-toggle {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 html {
   scroll-behavior: smooth; /* ✨ Smooth scrolling for anchors */
 }
@@ -250,6 +243,18 @@ h2 {
    color: var(--h2-color);
   transition: color 0.4s ease;
 }
+
+/* highlight color */
+::selection {
+  background: #175079; 
+  color: whitesmoke;      
+}
+
+::-moz-selection {
+  background: #175079;
+  color: whitesmoke;   
+}
+
 
 
 
