@@ -1501,6 +1501,15 @@ align-items: flex-start;
 }
 
 
+
+.double-diamond{
+  width: 60%;
+  height: auto;
+  padding-top: 50px;
+}
+
+
+
 /* Expertise Section */
 
 .expertise-section {
@@ -2541,6 +2550,12 @@ display:none;
 .about-story {
   padding: 2rem 1rem;
   border-top: 1px;
+}
+
+.double-diamond{
+  width:100%;
+  height: auto;
+  padding-bottom: 10px;
 }
 
 .brand-scroll{
