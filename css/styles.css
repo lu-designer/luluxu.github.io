@@ -2363,7 +2363,7 @@ background-color: transparent;
   /* Hero */
   .hero {
     /*min-height: 70vh;*/
-        height: calc(var(--vh, 1vh) * 80);
+        height: calc(var(--vh, 1vh) * 90);
     background-attachment: scroll;
     padding-bottom: 0;
   }
