@@ -2362,7 +2362,8 @@ background-color: transparent;
 
   /* Hero */
   .hero {
-    min-height: 70vh;
+    /*min-height: 70vh;*/
+        height: calc(var(--vh, 1vh) * 80);
     background-attachment: scroll;
     padding-bottom: 0;
   }
@@ -2405,6 +2406,7 @@ display:none;
 
   .tagline-scroll {
   padding:0;
+  margin: 0;
 }
 
 .scroll-content span {

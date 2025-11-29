@@ -249,7 +249,18 @@ filterItems.forEach(item => {
 
 
 
+function setMobileVH() {
+  if (window.innerWidth <= 768) {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  } else {
+    // Reset on desktop so nothing changes
+    document.documentElement.style.removeProperty('--vh');
+  }
+}
 
+setMobileVH();
+window.addEventListener('resize', setMobileVH);
 
 
 
