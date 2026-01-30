@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
-  <!-- Font Awesome for social icons -->
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for social icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <script defer src="script.js"></script>
@@ -21,7 +23,7 @@
  <header class="navbar">
 <div class="logo"><a href="index.html">Lulu Xu</a></div> 
   <nav>
-    <ul>
+    <ul class="navUl">
       <li><a href="work.html">Work</a></li>
       <li><a href="about.html">About</a></li>
             <li><a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> </li>
@@ -108,16 +110,25 @@
     <div class="filter-menu">
       <span class="filter-item active" data-filter="all">View All</span>
       <span class="filter-item" data-filter="ux">UX UI </span>
+             <span class="filter-item" data-filter="app">Mobile App</span>
+      <span class="filter-item" data-filter="website">Website</span>
+                         <span class="filter-item" data-filter="development">Development</span>
            <span class="filter-item" data-filter="research">Research & Strategy</span>
             <span class="filter-item" data-filter="service">Service Design</span>
-      <span class="filter-item" data-filter="website">Website</span>
-            <span class="filter-item" data-filter="app">Mobile App</span>
-                   <span class="filter-item" data-filter="development">Development</span>
             <span class="filter-item" data-filter="visual">Visual/Creative</span>
     </div>
 
     <!-- Project Grid -->
     <div class="project-grid-filter">
+
+         <div class="project-card" data-category="ux app research visual">
+        <a href="project-Gently App.html">
+          <img src="images/Gently-horizontalScroll.jpg" alt="Gently">
+          
+              <h2 class="project-card-title">Gently</h2>
+                      <p class="project-card-subtitle">Mobile App | UX UI</p>
+        </a>
+      </div>
 
       <!-- 🎥 Story-Based Videos -->
       <div class="project-card video-project" data-category="website development ux research visual">
@@ -205,7 +216,7 @@
 
     <!-- Footer -->
   <footer>
-    <nav class="footer-nav">
+    <nav class="footer-nav navUl">
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
                   <a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> 
@@ -234,8 +245,8 @@
     
   </footer>
 
-<!-- Custom Cursor -->
-<div class="custom-cursor"></div>
+<!-- Custom Cursor 
+<div class="custom-cursor"></div>-->
 
 
 

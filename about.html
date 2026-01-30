@@ -6,6 +6,8 @@
   <title>About | Lulu Xu</title>
   <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!-- Font Awesome for social icons -->
@@ -22,7 +24,7 @@
  <header class="navbar">
 <div class="logo"><a href="index.html">Lulu Xu</a></div> 
   <nav>
-    <ul>
+    <ul class="navUl">
       <li><a href="work.html">Work</a></li>
       <li><a href="about.html">About</a></li>
             <li><a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> </li>
@@ -59,7 +61,7 @@
         <img src="images/about1.jpg" alt="Justin portrait placeholder">
       </div>
       <div class="intro-text">
-                          <h1>ABOUT ME</h1>
+                          <h1>About Me</h1>
 
    <p>Hi, I’m Lulu, a user experience designer based in Sydney, working remotely with teams worldwide. I specialise in UX UI design, service and product strategy, and user research. In my latest project, I also explored front-end development by building an immersive website for an artist. 
    </p>
@@ -197,6 +199,12 @@
     <!-- Project Grid -->
     <div class="project-grid-filter">
 
+            <div class="project-card" data-category="ux app research">
+        <a href="project-Gently App.html">
+          <img src="images/Gently-horizontalScroll.jpg" alt="Gently App">   
+        </a>
+      </div> 
+
       <!-- 🎥 Story-Based Videos -->
       <div class="project-card video-project" data-category="website development ux research visual">
         <a href="project-justinSite.html">
@@ -207,12 +215,10 @@
    </a>
       </div>
 
-      
-      <div class="project-card" data-category="ux app research">
-        <a href="project-belonging.html">
-          <img src="images/belonging-horizontalScroll.jpg" alt="Macquarie University Belonging App">   
-        </a>
-      </div> 
+
+     
+
+   
 
   </div>
 
@@ -222,7 +228,7 @@
 </div>
 </section>
 
-
+<!--
 <section class="gallery-tilt reveal">
     <div class="gallery-item item-1">
     <img src="images/CyprusCastle.jpg" alt="Caption for image 1">
@@ -254,7 +260,7 @@
   <h2> Travel & art have long been my passions, allowing me to explore both the inner world and the outward beauty and magic the world has to offer. </h2>
 </div>
 </section>
-
+-->
 
 
 
@@ -271,7 +277,7 @@
 
     <!-- Footer -->
   <footer>
-    <nav class="footer-nav">
+    <nav class="footer-nav navUl">
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
                   <a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> 
@@ -300,8 +306,8 @@
 
 
 
-<!-- Custom Cursor -->
-<div class="custom-cursor"></div>
+<!-- Custom Cursor 
+<div class="custom-cursor"></div>-->
 
 
 <script>

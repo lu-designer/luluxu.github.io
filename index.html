@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!-- Font Awesome for social icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="icon" href="/images/browerIcon.png" type="image/png">
@@ -15,19 +19,17 @@
 </head>
 <body>
 
-    
-<!-- Firefly Cursor Effect 
-<canvas id="firefly-canvas"></canvas>-->
 
-<!-- Custom Cursor -->
-<div class="custom-cursor"></div>
+
+<!-- Custom Cursor 
+<div class="custom-cursor"></div>-->
 
   <!-- Navbar -->
  <header class="navbar">
 <div class="logo"><a href="index.html">Lulu Xu</a> </div> 
-   
+
   <nav>
-    <ul>
+    <ul class="navUl">
       <li><a href="work.html">Work</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> </li>
@@ -59,15 +61,24 @@
 </header>
 
 
-  <!-- Hero --> 
+<!-- Hero -->
 <section class="hero reveal parallax" data-speed="0.4">
+
   <div class="hero-content">
-    <h1 class=" animate fade-up">Designer of Digital Experiences</h1>
-    <p class="hero-text">
-Creating meaningful digital experiences through user insight, systems thinking, and purposeful design.    </p>
-    <a href="contact.html" class="btn primary animate fade-up delay-2">Work with Me</a>
+    <h1 class="animate fade-up">
+    Designer of Digital Experiences <em class="hero-text2">that matter</em>
+    </h1>
+
+    <p class="hero-text animate fade-up delay-1">
+      I help purpose-led teams design apps, websites, and digital experiences grounded in user research, balancing clarity, usability, and care.
+    </p>
+
+    <a href="#storytelling" class="btn primary animate fade-up delay-2">
+      Selected Work
+    </a>
   </div>
 </section>
+
 
 
 
@@ -77,22 +88,18 @@ Creating meaningful digital experiences through user insight, systems thinking, 
     <span>UX UI</span>
     <span>WEB DESIGN</span>
     <span>MOBILE APP</span>
-    <span>RESEARCH</span>
+    <span>USER RESEARCH</span>
     <span>SERVICE DESIGN</span>
-    <span>JOURNEY MAPPING</span>
         <span>DEVELOPMENT</span>
-    <span>WORKSHOPS</span>
-    <span>VISUAL DESIGN</span>
+    <span>ART DIRECTION</span>
     <!-- repeat once more for seamless loop -->
     <span>UX UI</span>
     <span>WEB DESIGN</span>
     <span>MOBILE APP</span>
-    <span>RESEARCH</span>
+    <span>USER RESEARCH</span>
     <span>SERVICE DESIGN</span>
-    <span>JOURNEY MAPPING</span>
         <span>DEVELOPMENT</span>
-    <span>WORKSHOPS</span>
-    <span>VISUAL DESIGN</span>
+    <span>ART DIRECTION</span>
   </div>
 </section>
 
@@ -101,11 +108,30 @@ Creating meaningful digital experiences through user insight, systems thinking, 
 
   <!-- Storytelling -->
 
-<section class="storytelling parallax">
+<section id="storytelling" class="storytelling parallax">
   <div class="scroll-container">
     <div class="project-track">
 
   <!-- ✅ NEW: looping video section -->
+
+
+    <div class="project video-project animate" >
+        <a href="project-Gently App.html">
+                 <img src="images/Gently-horizontalScroll.jpg" alt="Project 10">
+
+       <div class="video-overlay-text">
+        <h2>Gently</h2>
+        <p class="project-card-subtitle"> A mobile app that supports independent creatives and solopreneurs when motivation drops.</p>
+
+      <!--  <div class="tags">
+        <span class="tag-text"> Website Design</span>
+        <span class="tag-text"> Front-end Development</span>-->
+      
+       </div>  
+        </a>
+      </div>
+
+
       <div class="project video-project animate" >
         <a href="project-justinSite.html">
         <video autoplay loop muted playsinline class="loop-video">
@@ -115,7 +141,7 @@ Creating meaningful digital experiences through user insight, systems thinking, 
         </video>
        <div class="video-overlay-text">
         <h2>Justin Jet Zorbas</h2>
-        <p class="project-card-subtitle">Website | Front-end Development</p>
+        <p class="project-card-subtitle"> An interactive website that blends storytelling, sound, and motion to reflect the artist's atmospheric style.</p>
 
       <!--  <div class="tags">
         <span class="tag-text"> Website Design</span>
@@ -130,7 +156,9 @@ Creating meaningful digital experiences through user insight, systems thinking, 
           <img src="images/belonging-horizontalScroll.jpg" alt="Project 10">
           <div class="video-overlay-text">
        <h2>Macquarie University</h2>
-               <p class="project-card-subtitle">Mobile App | UX UI</p>
+               <p class="project-card-subtitle"> A mobile app supporting connection and community for university students.
+
+</p>
       </div>  
         </a>
       </div>
@@ -144,7 +172,9 @@ Creating meaningful digital experiences through user insight, systems thinking, 
         </video>
        <div class="video-overlay-text">
         <h2>Macquarie University</h2>
-        <p class="project-card-subtitle">Website | UX UI</p>
+        <p class="project-card-subtitle">Improving university student onboarding and enrolment experiences through website redesign.
+
+</p>
     
        </div>  
         </a>
@@ -156,7 +186,7 @@ Creating meaningful digital experiences through user insight, systems thinking, 
           <img src="images/bigW-thumbnail.jpg" alt="Project 10">
           <div class="video-overlay-text">
        <h2>Big W</h2>
-          <p class="project-card-subtitle">Product Strategy | Research</p>
+          <p class="project-card-subtitle">A product solution that helps share product sustainability and traceability information with consumers.</p>
 
       </div>  
         </a>
@@ -167,7 +197,9 @@ Creating meaningful digital experiences through user insight, systems thinking, 
           <img src="images/macquarie-serviceDesign-thumbnail.jpg" alt="Project 10">
       <div class="video-overlay-text">
           <h2>Macquarie University</h2>
-         <p class="project-card-subtitle">Service Design | Workshop</p>
+         <p class="project-card-subtitle">Optimising the student experience through journey mapping & service touchpoint analysis
+
+</p>
       </div>  
       </a>
       </div>
@@ -324,7 +356,7 @@ Creating meaningful digital experiences through user insight, systems thinking, 
 
     <!-- Footer -->
   <footer>
-    <nav class="footer-nav">
+    <nav class="footer-nav navUl">
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
             <a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> 

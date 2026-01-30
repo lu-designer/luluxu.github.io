@@ -122,7 +122,7 @@ if (storytelling && scrollContainer && track) {
 
 
 // Custom Mouse Cursor
-
+/*** 
 const cursor = document.querySelector(".custom-cursor");
 
 document.addEventListener("mousemove", (e) => {
@@ -130,64 +130,24 @@ document.addEventListener("mousemove", (e) => {
   cursor.style.left = `${e.clientX}px`;
 });
 
-  document.querySelectorAll('a, button, .clickable').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('custom-hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('custom-hover'));
+const interactiveElements = document.querySelectorAll(
+  "a, button, [role='button'], .btn"
+);
+
+interactiveElements.forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    cursor.classList.add("is-hovering");
   });
 
-
-
-// Cursor enlarge slightly on hover over clickable items
-
-const links = document.querySelectorAll("a, button, span");
-
-links.forEach(link => {
-  link.addEventListener("mouseenter", () => {
-    cursor.style.transform = "translate(-50%, -50%) scale(2)";
-    cursor.style.backgroundColor = "#7c7be8ff";
-  });
-  link.addEventListener("mouseleave", () => {
-    cursor.style.transform = "translate(-50%, -50%) scale(1)";
-    cursor.style.backgroundColor = "#ed884e";
+  el.addEventListener("mouseleave", () => {
+    cursor.classList.remove("is-hovering");
   });
 });
-
-
-
-// 🔇 Disable background audio & sound interactions on mobile
-if (window.innerWidth <= 768) {
-  // Target your ambient audio
-  const ambientAudio = document.getElementById('ambient-audio');
-  if (ambientAudio) {
-    ambientAudio.pause();
-    ambientAudio.currentTime = 0;
-    ambientAudio.removeAttribute('autoplay');
-    ambientAudio.removeAttribute('loop');
-  }
-
-  // Disable sound intro click triggering playback
-  const soundIntro = document.getElementById('sound-intro');
-  if (soundIntro) {
-    soundIntro.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      // Fade out intro overlay if needed
-      soundIntro.style.display = 'none';
-    });
-  }
-
-  // Also ensure any <audio> tags on the page are muted
-  const allAudio = document.querySelectorAll('audio');
-  allAudio.forEach(audio => {
-    audio.pause();
-    audio.currentTime = 0;
-    audio.removeAttribute('autoplay');
-    audio.removeAttribute('loop');
-  });
-}
+***/
 
 
 // 🔹 Disable cursor animation on mobile
+/*** 
 if (window.innerWidth <= 768) {
   const cursorDot = document.querySelector('.cursor-dot');
   if (cursorDot) cursorDot.style.display = 'none';
@@ -195,33 +155,9 @@ if (window.innerWidth <= 768) {
   // Stop cursor tracking listeners
   document.removeEventListener('mousemove', handleCursorMove);
 }
-
-
-
-// Project Filter System
-
-/*** 
-  const filterItems = document.querySelectorAll('.filter-item');
-  const projectCards = document.querySelectorAll('.project-card');
-
-  filterItems.forEach(item => {
-    item.addEventListener('click', () => {
-      // remove active class
-      filterItems.forEach(i => i.classList.remove('active'));
-      item.classList.add('active');
-
-      const filterValue = item.getAttribute('data-filter');
-
-      projectCards.forEach(card => {
-        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
 ***/
+
+
 
 // Project Filter System (supports multiple categories)
 const filterItems = document.querySelectorAll('.filter-item');
