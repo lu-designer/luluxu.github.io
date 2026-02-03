@@ -2683,9 +2683,11 @@ display:none;
 
   /* About Page */
 .about-intro{
-   margin-top: 4rem;  
+   margin-top: 6rem;  
    padding: 2rem 1rem;  
 }
+
+
 
 .about-intro h1 {
   font-size:2rem;
@@ -2867,10 +2869,12 @@ padding-bottom: 0;
 
     .work{
 
-    padding:1rem;
-
+  margin-top: 2rem;
+  padding:2rem 1rem;
 
     }
+
+
 
 .project-grid-filter {
   margin-top: 5rem;
@@ -2888,7 +2892,8 @@ padding: 1rem 0;
 
 .contact{
 
-  padding:8rem 1rem 5rem 1rem;
+  margin-top: 4rem;
+  padding:2rem 1rem;
 
 }
 
