@@ -137,6 +137,7 @@ body {
   color: var(--text-color);
   transition: background-color 0.4s, color 0.4s;
   line-height: 1.6;
+  
 }
 
 
@@ -166,8 +167,10 @@ button:hover, .btn:hover, .cta-button:hover {
 }
 
 
+/* OLD TOGGLE */
+
+/* 
 .mode-toggle {
-  /*background-color: var(--button-bg, #D7CFA1);*/
   background-color: #a0bda7;
   border: none;
   border-radius: 50%;
@@ -190,7 +193,6 @@ button:hover, .btn:hover, .cta-button:hover {
   
 }
 
-/* Dark Mode Colors */
 body.dark-mode .mode-toggle {
   background-color: var(--button-bg-dark, #a0bda7);
   color: var(--button-icon-dark, #2A260A);
@@ -201,16 +203,87 @@ body.dark-mode .mode-toggle {
 }
 
 
-/* Optional: fade transition for icons */
 .mode-toggle svg {
   transition: opacity 0.3s ease;
 
-  width: 22px;              /* optional: slightly smaller for perfect visual balance */
+  width: 22px;            
   height: 22px;
-   transform: translateY(1.1px); /* or -1px depending on which direction it’s off */
+   transform: translateY(1.1px);  
+}
 
+ */
+
+
+.mode-toggle {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(160, 189, 167, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  color: #2A260A;
+
+  transition: 
+    background 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover */
+.mode-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Active click */
+.mode-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Icon styling */
+.mode-toggle svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   
 }
+
+/* Default state (Light mode) */
+#sun-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+#moon-icon {
+  opacity: 0;
+  transform: rotate(90deg);
+  color: #FFFFFF;
+}
+
+/* Dark Mode */
+body.dark-mode #sun-icon {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+body.dark-mode #moon-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+
 
 
 
@@ -457,6 +530,7 @@ a:hover {
 
     background-color: var(--nav-bg);
   box-shadow: 0 1px 1px 0 rgba(31, 41, 51, 0.06);
+  
 
 }
 
@@ -508,8 +582,51 @@ header {
 }
 
 
+.hero-glow {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  width: 700px;
+  height: 700px;
+  border-radius: 100%;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle,
+    /*  rgba(163, 51, 152, 0.35) 0%,
+    rgba(188, 206, 153, 0.2) 30%,
+    rgba(122, 181, 176, 0.1) 50%,
+    transparent 75%*/
 
 
+
+     rgba(235, 176, 227, 0.35) 0%,
+    rgba(230, 192, 159, 0.2) 20%,
+    rgba(220, 222, 156, 0.1) 30%,
+    transparent 75%
+  );
+
+  filter: blur(40px);
+
+  animation: glowPulse 6s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(2);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 
 .hero-content {
   position: relative;
@@ -2440,7 +2557,7 @@ padding-top: 0;
 
   /* Navbar */
   .navbar {
-    padding: 0.6rem 1rem;
+    
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
@@ -2467,15 +2584,16 @@ padding-top: 0;
  
   width: auto;
   height: auto;
-      padding: 4px; /* keeps circular breathing room */
+      padding: 12px; /* keeps circular breathing room */
       box-shadow: none;
 }
 
   .mode-toggle:hover {
   transform: none;
-  padding:auto;
 }
-  
+  .mode-toggle:active {
+  transform: none;
+}
 
   /* General Section */
   section {
