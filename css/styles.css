@@ -586,8 +586,8 @@ header {
   position: absolute;
   top: 30%;
   left: 70%;
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   border-radius: 100%;
   pointer-events: none;
 
@@ -600,8 +600,8 @@ header {
 
 
 
-     rgba(236, 152, 225, 0.35) 0%,
-    rgba(198, 160, 127, 0.2) 30%,
+     rgba(235, 183, 228, 0.35) 0%,
+    rgba(230, 200, 174, 0.2) 30%,
     rgba(233, 235, 168, 0.1) 50%,
     transparent 75%
   );
@@ -609,7 +609,7 @@ header {
   filter: blur(40px);
 
   animation: glowPulse 8s ease-in-out infinite;
-  transform: translate(-70%, -70%);
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
