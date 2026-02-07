@@ -121,44 +121,6 @@ if (storytelling && scrollContainer && track) {
 
 
 
-// Custom Mouse Cursor
-/*** 
-const cursor = document.querySelector(".custom-cursor");
-
-document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
-});
-
-const interactiveElements = document.querySelectorAll(
-  "a, button, [role='button'], .btn"
-);
-
-interactiveElements.forEach(el => {
-  el.addEventListener("mouseenter", () => {
-    cursor.classList.add("is-hovering");
-  });
-
-  el.addEventListener("mouseleave", () => {
-    cursor.classList.remove("is-hovering");
-  });
-});
-***/
-
-
-// 🔹 Disable cursor animation on mobile
-/*** 
-if (window.innerWidth <= 768) {
-  const cursorDot = document.querySelector('.cursor-dot');
-  if (cursorDot) cursorDot.style.display = 'none';
-
-  // Stop cursor tracking listeners
-  document.removeEventListener('mousemove', handleCursorMove);
-}
-***/
-
-
-
 // Project Filter System (supports multiple categories)
 const filterItems = document.querySelectorAll('.filter-item');
 const projectCards = document.querySelectorAll('.project-card');
@@ -201,21 +163,63 @@ window.addEventListener('resize', setMobileVH);
 
 
 
-const toggleButton = document.getElementById('mode-toggle');
-const body = document.body;
 
-// Load saved theme
-if (localStorage.getItem('theme') === 'dark') {
-  body.classList.add('dark-mode');
+
+
+// Process Section Toggle (Discover / Explore / Build)
+const processButtons = document.querySelectorAll('.service-titles button');
+const processTexts = document.querySelectorAll('.service-text');
+
+if (processButtons.length > 0) {
+  processButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+
+      // Remove active state from all buttons
+      processButtons.forEach(btn => btn.classList.remove('active'));
+
+      // Hide all text blocks
+      processTexts.forEach(text => text.classList.remove('active'));
+
+      // Activate clicked button
+      button.classList.add('active');
+
+      // Show corresponding text
+      const targetText = document.getElementById(targetId);
+      if (targetText) {
+        targetText.classList.add('active');
+      }
+    });
+  });
 }
 
-toggleButton.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
 
-  const isDark = body.classList.contains('dark-mode');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-});
 
+
+// Hero Cursor Glow
+const hero = document.querySelector('.hero');
+const glow = document.querySelector('.hero-glow');
+
+if (hero && glow) {
+
+  hero.addEventListener('mousemove', (e) => {
+    const rect = hero.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    glow.style.left = `${x}px`;
+    glow.style.top = `${y}px`;
+  });
+
+  hero.addEventListener('mouseenter', () => {
+    glow.style.opacity = '1';
+  });
+
+  hero.addEventListener('mouseleave', () => {
+    glow.style.opacity = '0';
+  });
+}
 
 
 

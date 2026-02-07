@@ -586,8 +586,8 @@ header {
   position: absolute;
   top: 30%;
   left: 70%;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 100%;
   pointer-events: none;
 
@@ -600,17 +600,22 @@ header {
 
 
 
-     rgba(235, 183, 228, 0.35) 0%,
-    rgba(230, 200, 174, 0.2) 30%,
-    rgba(233, 235, 168, 0.1) 50%,
+     rgba(230, 177, 222, 0.35) 0%,
+    rgba(205, 185, 242, 0.2) 30%,
+    rgba(235, 217, 161, 0.1) 50%,
     transparent 75%
   );
 
   filter: blur(40px);
 
   animation: glowPulse 8s ease-in-out infinite;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -30%);
   z-index: 0;
+
+
+  /* NEW */
+  opacity: 0; /* start hidden */
+  transition: opacity 0.4s ease;
 }
 
 @keyframes glowPulse {

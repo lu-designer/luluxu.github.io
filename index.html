@@ -80,7 +80,8 @@
     </h1>
 
     <p class="hero-text animate fade-up delay-1">
-I help purpose-led teams design digital products and services grounded in research — balancing clarity, usability, and care.    </p>
+      I help purpose-led teams design apps, websites, and digital experiences grounded in user research, balancing clarity, usability, and care.
+    </p>
 
     <a href="#storytelling" class="btn primary animate fade-up delay-2">
       Selected Work
@@ -396,32 +397,24 @@ I help purpose-led teams design digital products and services grounded in resear
 
   <script>
 
- /***
+
 const toggleButton = document.getElementById('mode-toggle');
-const sunIcon = document.getElementById('sun-icon');
-const moonIcon = document.getElementById('moon-icon');
 const body = document.body;
 
+// Load saved theme
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark-mode');
-  sunIcon.style.display = 'none';
-  moonIcon.style.display = 'block';
 }
 
 toggleButton.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
-  
+
   const isDark = body.classList.contains('dark-mode');
-  if (isDark) {
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    sunIcon.style.display = 'block';
-    moonIcon.style.display = 'none';
-    localStorage.setItem('theme', 'light');
-  }
-});***/
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
+
+
 
 
 
