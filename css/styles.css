@@ -2032,6 +2032,14 @@ padding-bottom: 10rem;
 ---------------------------- */
 
 
+.projectHeading{
+ font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+    line-height: 1.15;
+
+}
+
 .project-overview {
     padding: 8rem 4rem;
    background-color: var(--bg-color);
