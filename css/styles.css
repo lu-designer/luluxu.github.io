@@ -569,7 +569,7 @@ header {
   position: relative;
   overflow: hidden;
 
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1754,7 +1754,7 @@ align-items: flex-start;
 
 .expertise-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
