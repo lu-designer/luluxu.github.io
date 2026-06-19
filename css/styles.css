@@ -1299,6 +1299,9 @@ justify-content: center;
   opacity:0.8;
   /*transition: 0.3s;*/
 
+    font-weight: 200;
+  font-size: 18px;
+
 }
 
 
@@ -1314,10 +1317,11 @@ justify-content: center;
     color: var(--filter-item-hover);
   opacity: 1;
    font-weight: bolder;
-  /*font-style: italic;*/
-  font-family: 'Aesthetic',  sans-serif;
+  font-family: 'DM Serif Display',  sans-serif;
   font-style: normal;
   opacity: 1;
+      font-weight: 200;
+  font-size: 18px;
 }
 
 
