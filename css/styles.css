@@ -750,8 +750,8 @@ color:white;
 /* ✅ Third (Visit Website) Button */
 .btn.third {
   background-color: transparent;
-  color: #be9d5e;
-  border: 1.5px solid #be9d5e; /* yellow border */
+  color: #849E8A;
+  border: 1.5px solid #849E8A; 
   font-weight: 600;
   margin-top: 1rem;
   padding: 0.5rem 1.3rem;
@@ -763,7 +763,7 @@ color:white;
 
 /* Hover Effect */
 .btn.third:hover {
-  background-color: #be9d5e;
+  background-color: #849E8A;
   color: #e0e5df;
    transform: translateY(-0.5px);
 }
@@ -2111,7 +2111,7 @@ max-width: 70%;
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 10rem ;
+  margin-bottom: 0 ;
 }
 
 .full-width-image-noBottomGap img {
@@ -2125,8 +2125,19 @@ max-width: 70%;
 .imgInsideCol{
 
   margin-top:  5rem;
-  margin-bottom: 0;
+  margin-bottom: -4rem;
   padding-bottom: 0;
+}
+
+.annotation{
+
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+  text-align: right;
+  color: #a3a3a3;
+   font-size:clamp(0.75rem, 0.5rem + 1vw, 0.875rem);
+     text-transform: uppercase;
+
 }
 
 
@@ -2976,6 +2987,11 @@ align-items: center;
 .full-width-image img {
   margin-bottom : 2rem  ;
 }
+
+.annotation{
+  margin-bottom: 2rem;
+}
+
 
 .demo-video {
   border-radius: 8px;
