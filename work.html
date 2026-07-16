@@ -24,17 +24,15 @@
 
   <!-- Navbar -->
  <header class="navbar">
-<div class="logo"><a href="./">Lulu Xu</a></div> 
+<div class="logo"><a href="./">Lulu Xu</a> </div> 
+
   <nav>
     <ul class="navUl">
-         <li><a href="./work">Work</a></li>
+      <li><a href="./work">Work</a></li>
       <li><a href="./about">About</a></li>
-  <!-- <li><a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> </li>-->
-      <li><a href="./contact">Contact</a></li>
+         <li><a href="./contact">Contact</a></li>
 
-      <!-- OLD toggle button 
-<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-  <i class="fa-regular fa-moon"></i>-->
+ 
 
  <button class="mode-toggle" id="mode-toggle" aria-label="Toggle light/dark mode">
   <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -50,8 +48,13 @@
 
 
     </ul>
+ 
   </nav>
 </header>
+
+
+
+
 
 
 
@@ -92,10 +95,12 @@
     <!-- Filter Menu -->
     <div class="filter-menu">
       <span class="filter-item active" data-filter="all">View All</span>
-            <span class="filter-item" data-filter="website">Web Design</span>
- <span class="filter-item" data-filter="development">Web Development</span>
-<span class="filter-item" data-filter="ux">UX Design & Strategy </span>
-         
+      <span class="filter-item" data-filter="ux">Product Design </span>
+      <span class="filter-item" data-filter="research">User Research </span>
+            <span class="filter-item" data-filter="service">Service Design </span>
+                     <span class="filter-item" data-filter="app">Mobile App </span>
+                     <span class="filter-item" data-filter="website">Website </span>
+
            </div>
 
 
@@ -104,61 +109,86 @@
     <div class="project-grid-filter">
 
 
-    <div class="project-card" data-category="website development ux research visual">
-        <a href="./project-AzuleEarthHealing">
-          <img src="images/Azule-horizontalScroll.jpg" alt="Azule Earth Healing Case Study">
-          
-              <h2 class="project-card-title">Azule Earth Healing</h2>
-        <p class="project-card-subtitle">  A website experience that feels calm, grounded, and intuitive.
-     </p>
-        </a>
-      </div>
-
-      
-      <div class="project-card video-project" data-category="website development ux research visual">
-        <a href="./project-justinSite">
-           <img src="images/justinSite-hero.jpg" alt="Justin Jet Zorbas Web Design & Development case study by Lulu Xu">
-
-
-          <h2 class="project-card-title">Justin Jet Zorbas</h2>
-        <p class="project-card-subtitle"> An interactive website that blends storytelling, sound & motion to reflect the artist's atmospheric style.</p>
-        </a>
-      </div>
-
-
-         <div class="project-card" data-category="ux app research visual">
-        <a href="./project-Gently App">
-          <img src="images/Gently-horizontalScroll.jpg" alt="Gently App Case Study">
-          
-              <h2 class="project-card-title">Gently</h2>
-        <p class="project-card-subtitle"> A mobile app that supports independent creatives and solopreneurs when motivation drops.</p>
-        </a>
-      </div>
-
-      
       <div class="project-card" data-category="ux app research">
         <a href="./project-belonging">
           <img src="images/belonging-horizontalScroll.jpg" alt="Macquarie University Belonging App Case Study">
           
               <h2 class="project-card-title">Macquarie University</h2>
-<p class="project-card-subtitle"> A mobile app supporting connection and community for university students.
-</p>         
+                      <p class="project-card-subtitle">Mobile App | UX UI</p>
+        </a>
+      </div>
+   
+
+      <div class="project-card" data-category="research">
+        <a href="./project-bigW">
+          <img src="images/bigW-thumbnail.jpg" alt="Big W sustainability product experience and research project">
+          
+            <h2 class="project-card-title">Big W</h2>
+            <p class="project-card-subtitle">Product Strategy | Research</p>
         </a>
       </div>
 
-        <!--  UX & Service Design -->
-      <div class="project-card video-project" data-category="ux website research">
+
+
+      <div class="project-card" data-category="service research">
+        <a href="./project-service-design">
+          <img src="images/macquarie-serviceDesign-thumbnail.jpg" alt="Macquarie University service design journey mapping workshop project">
+          
+            <h2 class="project-card-title">Macquarie University</h2>
+            <p class="project-card-subtitle">Service Design | Workshop Facilitation</p>      
+        </a>
+      </div>
+
+     <div class="project-card" data-category="service research">
+        <a href="./project-NSWElectoralCommission">
+          <img src="images/Hero-ElectoralCommission.jpg" alt="Macquarie University service design journey mapping workshop project">
+          
+            <h2 class="project-card-title">NSW Electoral Commission</h2>
+            <p class="project-card-subtitle">Web Application | Co-design Workshop</p>      
+        </a>
+      </div>
+
+      
+      <div class="project-card video-project" data-category="website development ux  visual">
+        <a href="./project-justinSite">
+                   <img src="images/Azule-horizontalScroll.jpg" alt="Justin Jet Zorbas Study">
+
+          <h2 class="project-card-title">Azule Earth Healing</h2>
+                  <p class="project-card-subtitle">Website Design & Development</p>
+        </a>
+      </div>
+
+   <div class="project-card video-project" data-category="ux website research">
         <a href="./project-enrolling">
           <video autoplay loop muted playsinline class="loop-video" aria-label="Macquarie University student enrolment website UX redesign project">
             <source src="images/enrolling-demo-vid.webm" type="video/webm" />
             <source src="images/enrolling-demo-vid.mp4" type="video/mp4" />
           </video>
             <h2 class="project-card-title">Macquarie University</h2>
- <p class="project-card-subtitle">Improving university student onboarding & enrolment experiences through website redesign.
-</p>
-            </a>
+                      <p class="project-card-subtitle">Website | UX UI</p>
+        </a>
       </div>
 
+
+
+      <div class="project-card" data-category="ux app research">
+        <a href="./project-Gently App">
+          <img src="images/Gently-horizontalScroll.jpg" alt="Gently App Case Study">
+          
+              <h2 class="project-card-title">Gently</h2>
+                      <p class="project-card-subtitle">Mobile App | UX UI</p>
+        </a>
+      </div>
+   
+
+      <div class="project-card video-project" data-category="website development ux  visual">
+        <a href="./project-justinSite">
+                   <img src="images/justinSite-hero.jpg" alt="Justin Jet Zorbas Study">
+
+          <h2 class="project-card-title">Justin Jet Zorbas</h2>
+                  <p class="project-card-subtitle">Website Design & Development</p>
+        </a>
+      </div>
 
 
       </div>
@@ -170,20 +200,21 @@
 
 
     <!-- CTA -->
-  <section class="cta " id="contact">
-    <h2>Got something worth building?</h2>
-    <p class="cta-description">Ready to have a website that actually feels like you? I offer a free 20-minute call to see if we're a good fit.</p>
-    <a href="https://calendly.com/luxu-designer/new-meeting" target="_blank" class="btn secondary2">Book a Free Chat</a>
+ <section class="cta reveal" id="contact">
+    <h2>Let's Work Together &#128075 </h2>
+    <p class="cta-description">Reach out to discover how we can collaborate.</p>
+        <a href="./contact" class="btn secondary2">Contact Me</a>
+
   </section>
 
 
   
   <footer>
-     <nav class="footer-nav navUl">
+    <nav class="footer-nav navUl">
       <a href="./work">Work</a>
       <a href="./about">About</a>
-      <!-- <a href="https://medium.com/@luluxucreate" target="_blank" aria-label="Instagram">Writing</a> -->
-      <a href="./contact">Contact</a>
+            <a href="./contact">Contact</a>
+
     </nav>
 
       <hr class="footer-divider">
@@ -202,9 +233,10 @@
         </a>
       </div>
 
-  <p>© 2025 Lulu Xu. All rights reserved. </p>
+  <p>© 2026 Lulu Xu. All rights reserved. </p>
     
   </footer>
+
 
 <!-- Custom Cursor 
 <div class="custom-cursor"></div>-->
